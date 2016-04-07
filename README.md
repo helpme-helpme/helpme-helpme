@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/hrr14-hera/hrr14-hera.png?label=ready&title=Ready)](https://waffle.io/hrr14-hera/hrr14-hera)
 # Project Name
 
 > Pithy project description
