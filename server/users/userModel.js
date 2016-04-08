@@ -1,13 +1,14 @@
 var mongoose = require('mongoose');
-var Goal = require('../goals/goalModel.js')
+var GoalSchema = require('../goals/goalSchema.js')
 
 var Schema = mongoose.Schema;
 
 var UserSchema = new Schema({
   username: { type : String, required: true },
   password: { type: String, required: true },
-  name: String,
-  goals: [{ type: Schema.Types.ObjectId, ref: 'Goal' }],
+  firstname: { type: String, required: true },
+  lastname: { type: String, required: true },
+  goals: [GoalSchema],
   friends: [{ type : Schema.Types.ObjectId, ref: 'User' }]
 });
 
