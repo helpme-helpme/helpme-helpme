@@ -52,6 +52,18 @@ function Profile($http) {
         .then(function(res) {
           return res.data;
         });
+    },
+
+    countComment: function(posts) {
+      var count = {};
+      posts.forEach(function(post) {
+        count[post.post] = post.comments.length;
+      });
+      return count;
+    },
+
+    checkComment: function(posts) {
+
     }
   };
 }
